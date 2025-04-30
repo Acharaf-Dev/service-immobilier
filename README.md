@@ -87,16 +87,15 @@ service-immobilier/
 │   ├── github-actions/
 │   └── docker/
 ```
-
 ## 🧾 Description des principaux dossiers/fichiers
-# 📦 frontend/
+### 📦 frontend/
 Contient l’interface utilisateur Next.js
 
 Pages séparées selon le rôle (admin, employé, etc.)
 
 Utilisation de axios.ts pour communiquer avec l’API backend
 
-# 🔧 backend/
+### 🔧 backend/
 Laravel utilisé pour gérer les API REST
 
 Routes API définies dans routes/api.php
@@ -105,7 +104,7 @@ Système de rôles : propriétaire, client, admin, etc.
 
 Gestion des annonces, paiements, contrôles de documents, etc.
 
-## 🐳 docker-compose.yml
+### 🐳 docker-compose.yml
 Définit les services :
 
 frontend (Next.js)
@@ -118,10 +117,10 @@ nginx pour le reverse proxy
 
 phpmyadmin pour l'administration base de données
 
-## 📄 .env (global)
+### 📄 .env (global)
 Coordonne les variables d’environnement des sous-projets
 
-## 🚀 deployment/ & ci-cd/
+### 🚀 deployment/ & ci-cd/
 Contiennent les fichiers pour le déploiement sur un VPS (Nginx, SSL, scripts shell)
 
 GitHub Actions ou autre CI/CD pour les push sur main ou develop
