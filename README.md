@@ -30,29 +30,25 @@ Plateforme web et mobile complète pour la gestion, la location, la vente et le 
 
 ## ⚙️ Architecture du projet
 
-# Arborescence complète du projet
+### 📁 Arborescence du projet
 
+```
 service-immobilier/
 ├── .gitignore
+├── .env
 ├── docker-compose.yml
 ├── README.md
-├── .env
 │
-├── frontend/                             # Frontend Next.js (interface utilisateur)
+├── frontend/                        # Frontend Next.js
 │   ├── .env.local
-│   ├── next.config.js
-│   ├── tailwind.config.js
-│   ├── postcss.config.js
 │   ├── package.json
 │   ├── public/
-│   │   └── images/
 │   ├── styles/
-│   │   └── globals.css
 │   ├── pages/
-│   │   ├── index.tsx                     # Page d'accueil
+│   │   ├── index.tsx
 │   │   ├── login.tsx
 │   │   ├── register.tsx
-│   │   ├── dashboard/                   # Dashboards séparés par rôle
+│   │   ├── dashboard/
 │   │   │   ├── admin.tsx
 │   │   │   ├── employee.tsx
 │   │   │   ├── client.tsx
@@ -60,18 +56,11 @@ service-immobilier/
 │   │   └── annonces/
 │   │       ├── [id].tsx
 │   │       └── create.tsx
-│   ├── components/                       # Composants UI partagés
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   ├── AnnonceCard.tsx
-│   │   └── ProtectedRoute.tsx
+│   ├── components/
 │   ├── utils/
-│   │   ├── axios.ts                      # Instance Axios
-│   │   └── auth.ts                       # Auth helper
 │   └── types/
-│       └── user.ts
 │
-├── backend/                              # Backend Laravel
+├── backend/                         # Backend Laravel
 │   ├── .env
 │   ├── artisan
 │   ├── composer.json
@@ -84,33 +73,20 @@ service-immobilier/
 │   ├── app/
 │   │   ├── Http/
 │   │   │   ├── Controllers/
-│   │   │   │   ├── AuthController.php
-│   │   │   │   ├── UserController.php
-│   │   │   │   ├── AnnonceController.php
-│   │   │   │   └── AdminController.php
 │   │   │   └── Middleware/
 │   │   ├── Models/
-│   │   │   ├── User.php
-│   │   │   ├── Annonce.php
-│   │   │   ├── Transaction.php
-│   │   │   └── Role.php
 │   │   └── Policies/
 │   └── tests/
-│       └── Feature/
 │
-├── deployment/
+├── deployment/                      # Déploiement (Nginx, certbot, scripts)
 │   ├── nginx/
-│   │   └── default.conf
 │   ├── certbot/
 │   └── scripts/
-│       └── deploy.sh
 │
-├── ci-cd/
+├── ci-cd/                           # Intégration Continue / Déploiement
 │   ├── github-actions/
-│   │   └── deploy.yml
 │   └── docker/
-│       ├── Dockerfile.frontend
-│       └── Dockerfile.backend
+```
 
 ## 🧾 Description des principaux dossiers/fichiers
 # 📦 frontend/
