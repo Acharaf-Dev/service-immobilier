@@ -1,4 +1,4 @@
-# 🏠 service-immobilier
+# 🏠 Service-immobilier
 
 Plateforme web et mobile complète pour la gestion, la location, la vente et le prêt de biens immobiliers.
 
